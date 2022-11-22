@@ -1,0 +1,3472 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+        <title>Delhi Metro Rail Corporation</title>
+    </head>
+    <body>
+      <div id="electric">
+      </div>
+      <div id="metro1">
+      </div>
+      <div id="metro">
+         <span class="back">
+            <div class="door"></div>
+            <div class="mirror">
+               <span class="m1"></span>
+               <span class="m2"></span>
+               <span class="m3"></span>
+               <span class="m4"></span>
+            </div>
+            <div class="door2"></div>
+         </span>
+         <span class="back">
+            <div class="door"></div>
+            <div class="mirror">
+               <span class="m1"></span>
+               <span class="m2"></span>
+               <span class="m3"></span>
+               <span class="m4"></span>
+            </div>
+            <div class="door2"></div>
+         </span>
+         <span class="engine">
+            <div class="spark">
+            </div><div class="spark1"></div>
+            <div class="door"></div>
+            <div class="mirror1">
+               <span class="m1"></span>
+               <span class="m22"></span>
+            </div>
+         </span>
+      </div>
+      <div class="track">
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <img src="logo.png" style="position: relative;  height:35px; float:left; padding: auto;">
+          <a class="navbar-brand" href="#" style="position: relative;  font-size: 30px; padding-left: 15px;">Delhi Metro Rail Corporation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="position: relative;  font-size: 20px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="view.html" style="position: relative; font-size: 20px;">View Map</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="total">
+    <div class="container" id="container">
+        <img src="logo.png" style="height:50px; float:left">
+        <P>Plan Your Journey...</P>
+        <br>
+        <form >
+          <div class="from">
+            <label for="src">From:</label>
+            <br>
+            <br>
+          <input type="text" id="src" name="source" autocomplete="off" list="from-vals" placeholder="Type station name...">
+          <datalist id="from-vals">
+            <!--BLUE LINE -->
+            <option value="Noida Electronic City">Noida Electronic City</option>
+            <option value="Noida Sector 62">Noida Sector 62</option>
+            <option value="Noida Sector 59">Noida Sector 59</option>
+            <option value="Noida Sector 61">Noida Sector 61</option>
+            <option value="Noida Sector 52">Noida Sector 52</option>
+            <option value="Noida Sector 34">Noida Sector 34</option>
+            <option value="Noida City Centre">Noida City Centre</option>
+            <option value="Golf Course">Golf Course</option>
+            <option value="Botanical Garden">Botanical Garden</option>
+            <option value="Noida Sector 18">Noida Sector 18</option>
+            <option value="Noida Sector 16">Noida Sector 16</option>
+            <option value="Noida Sector 15">Noida Sector 15</option>
+            <option value="New Ashok Nagar">New Ashok Nagar</option>
+            <option value="Mayur Vihar Extension">Mayur Vihar Extension</option>
+            <option value="Mayur Vihar - I">Mayur Vihar - I</option>
+            <option value="Akshardham">Akshardham</option>
+            <option value="Yamuna Bank">Yamuna Bank</option>
+            <option value="Indraprastha">Indraprastha</option>
+            <option value="Pragati Maidan">Pragati Maidan</option>
+            <option value="Mandi House">Mandi House</option>
+            <option value="Barakhambha Road">Barakhambha Road</option>
+            <option value="Rajiv Chowk">Rajiv Chowk</option>
+            <option value="Ramakrishna Ashram Marg">Ramakrishna Ashram Marg</option>
+            <option value="Jhandewalan">Jhandewalan</option>
+            <option value="Karol Bagh">Karol Bagh</option>
+            <option value="Rajendra Place">Rajendra Place</option>
+            <option value="Patel Nagar">Patel Nagar</option>
+            <option value="Shadipur">Shadipur</option>
+            <option value="Kirti Nagar">Kirti Nagar</option>
+            <option value="Moti Nagar">Moti Nagar</option>
+            <option value="Ramesh Nagar">Ramesh Nagar</option>
+            <option value="Rajouri Garden">Rajouri Garden</option>
+            <option value="Tagore Garden">Tagore Garden</option>
+            <option value="Subhash Nagar">Subhash Nagar</option>
+            <option value="Tilak Nagar">Tilak Nagar</option>
+            <option value="Janakpuri East">Janakpuri East</option>
+            <option value="Janakpuri West">Janakpuri West</option>
+            <option value="Uttam Nagar East">Uttam Nagar East</option>
+            <option value="Uttam Nagar West">Uttam Nagar West</option>
+            <option value="Nawada">Nawada</option>
+            <option value="Dwarka Mor">Dwarka Mor</option>
+            <option value="Dwarka">Dwarka</option>
+            <option value="Dwarka Sector 14">Dwarka Sector 14</option>
+            <option value="Dwarka Sector 13">Dwarka Sector 13</option>
+            <option value="Dwarka Sector 12">Dwarka Sector 12</option>
+            <option value="Dwarka Sector 11">Dwarka Sector 11</option>
+            <option value="Dwarka Sector 10">Dwarka Sector 10</option>
+            <option value="Dwarka Sector 9">Dwarka Sector 9</option>
+            <option value="Dwarka Sector 8">Dwarka Sector 8</option>
+            <option value="Dwarka Sector 21">Dwarka Sector 21</option>
+            <!--YELLOW LINE-->
+            <option value="Samaypur Badli">Samaypur Badli</option>
+            <option value="Rohini Sector 18">Rohini Sector 18</option>
+            <option value="Haiderpur">Haiderpur</option>
+            <option value="Jahangirpuri">Jahangirpuri</option>
+            <option value="Adarsh Nagar">Adarsh Nagar</option>
+            <option value="Azadpur">Azadpur</option>
+            <option value="Model Town">Model Town</option>
+            <option value="GTB Nagar">GTB Nagar</option>
+            <option value="Vishwa Vidyalaya">Vishwa Vidyalaya</option>
+            <option value="Vidhan Sabha">Vidhan Sabha</option>
+            <option value="Civil Lines">Civil Lines</option>
+            <option value="Kashmere Gate">Kashmere Gate</option>
+            <option value="Chandni Chowk">Chandni Chowk</option>
+            <option value="Chawri Bazar">Chawri Bazar</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Patel Chowk">Patel Chowk</option>
+            <option value="Central Secretariat">Central Secretariat</option>
+            <option value="Udyog Bhawan">Udyog Bhawan</option>
+            <option value="Jor Bagh">Jor Bagh</option>
+            <option value="INA">INA</option>
+            <option value="AIIMS">AIIMS</option>
+            <option value="Green Park">Green Park</option>
+            <option value="Hauz Khas">Hauz Khas</option>
+            <option value="Malviya Nagar">Malviya Nagar</option>
+            <option value="Saket">Saket</option>
+            <option value="Qutub Minar">Qutub Minar</option>
+            <option value="Chhatarpur">Chhatarpur</option>
+            <option value="Sultanpur">Sultanpur</option>
+            <option value="Arjan Garh">Arjan Garh</option>
+            <option value="Guru Dronacharya">Guru Dronacharya</option>
+            <option value="Sikandarpur">Sikandarpur</option>
+            <option value="MG Road">MG Road</option>
+            <option value="IFFCO Chowk">IFFCO Chowk</option>
+            <option value="HUDA City Centre">HUDA City Centre</option>
+            <!--PINK LINE-->
+            <option value="Majlis Park">Majlis Park</option>
+            <option value="Shalimar Bagh">Shalimar Bagh</option>
+            <option value="Netaji Subhash Place">Netaji Subhash Place</option>
+            <option value="Shakurpur">Shakurpur</option>
+            <option value="Punjabi Bagh West">Punjabi Bagh West</option>
+            <option value="ESI Hospital">ESI Hospital</option>
+            <option value="Mayapuri">Mayapuri</option>
+            <option value="Naraina Vihar">Naraina Vihar</option>
+            <option value="Delhi Cantonment">Delhi Cantonment</option>
+            <option value="Durgabai Deshmukh South Campus">Durgabai Deshmukh South Campus</option>
+            <option value="Sir Vishweshwaraiah Moti Bagh">Sir Vishweshwaraiah Moti Bagh</option>
+            <option value="Bhikaji Cama Place">Bhikaji Cama Place</option>
+            <option value="Sarojini Nagar">Sarojini Nagar</option>
+            <option value="South Extension">South Extension</option>
+            <option value="Lajpat Nagar">Lajpat Nagar</option>
+            <option value="Vinoba Puri">Vinoba Puri</option>
+            <option value="Ashram">Ashram</option>
+            <option value="Hazrat Nizamuddin">Hazrat Nizamuddin</option>
+            <option value="Mayur Vihar Pocket I">Mayur Vihar Pocket I</option>
+            <!--GREEN LINE-->
+            <option value="Inderlok">Inderlok</option>
+            <option value="Ashok Park Main">Ashok Park Main</option>
+            <option value="Punjabi Bagh East">Punjabi Bagh East</option>
+            <option value="Shivaji Park">Shivaji Park</option>
+            <option value="Madipur">Madipur</option>
+            <option value="Paschim Vihar East">Paschim Vihar East</option>
+            <option value="Paschim Vihar West">Paschim Vihar West</option>
+            <option value="Peera Garhi">Peera Garhi</option>
+            <option value="Udyog Nagar">Udyog Nagar</option>
+            <option value="Surajmal Stadium">Surajmal Stadium</option>
+            <option value="Nangloi">Nangloi</option>
+            <option value="Nangloi Railway station">Nangloi Railway station</option>
+            <option value="Rajdhani Park">Rajdhani Park</option>
+            <option value="Mundka">Mundka</option>
+            <option value="Mundka Industrial Area">Mundka Industrial Area</option>
+            <option value="Ghevra Metro station">Ghevra Metro station</option>
+            <option value="Tikri Kalan">Tikri Kalan</option>
+            <option value="Tikri Border">Tikri Border</option>
+            <option value="Pandit Shree Ram Sharma">Pandit Shree Ram Sharma</option>
+            <option value="Bahadurgarh City">Bahadurgarh City</option>
+            <option value="Brigadier Hoshiyar Singh">Brigadier Hoshiyar Singh</option>
+          </datalist>
+          </div>
+          <br>
+          <br>
+          <div class="to">
+            <label for="dest">To:</label>
+            <br>
+            <br>
+            <input type="text" id="dest" name="destination" autocomplete="off" list="from-vals" placeholder="Type station name...">
+          </div>
+          <br>
+          <br>
+          <input type="button" value="Find Route" onclick="rungraph()">
+        </form>
+    </div>
+    <div class="pathout-container" id="pathout" style="display: none;">
+      <img src="logo.png" style="height:50px; float:left">
+      <P>Route Details</P>
+      <label class="headers">Route:</label>
+      <label class="pc-others" id="src-out"></label>
+      <label class="pc-others">----></label>
+      <label id="dest-out" class="pc-others"></label>
+      <br>
+      <label class="headers">Number of stations:</label>
+      <label id="no-station-out" class="pc-others"></label>
+      <br>
+      <label class="headers">Fare:</label>
+      <label class="pc-others" id="fare"></label>
+      <br>
+      <label class="headers">Path:</label>
+      <div class="path-output" class="pc-others">
+        <div class="path-vertical-line"></div>
+        <div class="sp-ul">
+          <ul class="showpath" id="showpath" style="list-style: none;">
+          </ul>
+        </div>
+      </div>
+      <label class="headers">Interchange:</label>
+      <ul class="pc-others" id="inter" style="list-style: none;"></ul>
+      <br>
+      </div>
+      <br>
+        <div class="v20_2" id="liv-map-2"><div class="v20_3"></div><div class="v20_4" id="liv-map"><div class="v20_5"></div><div class="v20_6"></div><div class="v20_7" id="16"></div><div class="v20_8" id="15"></div><div class="v20_9" id="18"></div><div class="v20_10" id="17"></div><div class="v20_11" id="19"></div><div class="v20_12" id="20"></div><div class="v20_13" id="21"></div><div class="v20_14" id="138"></div><div class="v20_15" id="22"></div><div class="v20_16" id="23"></div><div class="v20_17" id="24"></div><div class="v20_18" id="25"></div><div class="v20_19" id="26"></div><div class="v20_20" id="27"></div><div class="v20_21" id="28"></div><div class="v20_22"  id="29"></div><div class="v20_23"  id="30"></div><div class="v20_24" id="31"></div><div class="v20_25" id="32"></div><div class="v20_26" id="33"></div><div class="v20_27" id="34"></div><div class="v20_28" id="35"></div><div class="v20_29" id="36"></div><div class="v20_30" id="37"></div><div class="v20_31" id="38"></div><div class="v20_32" id="39"></div><div class="v20_33" id="40"></div><div class="v20_34" id="41"></div><div class="v20_35" id="42"></div><div class="v20_36"  id="43"></div><div class="v20_37"  id="44"></div><div class="v20_38" id="45"></div><div class="v20_39" id="46"></div><div class="v20_40" id="47"></div><div class="v20_41" id="48"></div><div class="v20_42" id="49"></div><div class="v20_43" id="14"></div><div class="v20_44" id="13"></div><div class="v20_45" id="12"></div><div class="v20_46" id="11"></div><div class="v20_47" id="10"></div><div class="v20_48" id="9"></div><div class="v20_49" id="8"></div><div class="v20_50" id="7"></div><div class="v20_51" id="6"></div><div class="v20_52" id="5"></div><div class="v20_53" id="4"></div><div class="v20_54" id="3"></div><div class="v20_55" id="2"></div><div class="v20_56" id="1"></div><div class="v20_57" id="141"></div><div class="v20_58"id="140"></div><div class="v20_59"id="119"></div><div class="v20_60"id="118"></div><div class="v20_61"id="117"></div><div class="v20_62" id="116"></div><div class="v20_63" id="115"></div><div class="v20_64" id="114"></div><div class="v20_65" id="113"></div><div class="v20_66" id="112"></div><div class="v20_67" id="111"></div><div class="v20_68" id="110"></div><div class="v20_69" id="109"></div><div class="v20_70" id="108"></div><div class="v20_71" id="107"></div><div class="v20_72" id="106"></div><div class="v20_73" id="105"></div><div class="v20_74" id="92"></div><div class="v20_75" id="93"></div><div class="v20_76" id="94"></div><div class="v20_77" id="95"></div><div class="v20_78" id="96"></div><div class="v20_79" id="97"></div><div class="v20_80" id="98"></div><div class="v20_81" id="99"></div><div class="v20_82" id="143"></div><div class="v20_83" id="100"></div><div class="v20_84" id="101"></div><div class="v20_85" id="102"></div><div class="v20_86" id="103"></div><div class="v20_87" id="104"></div><div class="v20_88" id="91"></div><div class="v20_89" id="90"></div><div class="v20_90" id="89"></div><div class="v20_91" id="88"></div><div class="v20_92" id="87"></div><div class="v20_93" id="55"></div><div class="v20_94" id="86"></div><div class="v20_95"></div><div class="v20_96" id="72"></div><div class="v20_97"></div><div class="v20_98"></div><div class="v20_99"></div><div class="v20_100"></div><div class="v20_101"></div><div class="v20_102"></div><div class="v20_103"></div><div class="v20_104" id="120"></div><div class="v20_105"></div><div class="v20_106"></div><div class="v20_107"></div><div class="v20_108"></div><div class="v20_109" id="61"></div><div class="v20_110"></div><div class="v20_111"></div><div class="v20_112"></div><div class="v20_113"></div><div class="v20_114"></div><div class="v20_115"></div><div class="v20_116"></div><div class="v20_117"></div><div class="v20_118"></div><div class="v20_119"></div><div class="v20_120"></div><div class="v20_121"></div><div class="v20_122"></div><div class="v20_123" id="137"></div><div class="v20_124" id="136"></div><div class="v20_125" id="135"></div><div class="v20_126" id="134"></div><div class="v20_127"  id="133"></div><div class="v20_128" id="132"></div><div class="v20_129" id="142"></div><div class="v20_130" id="131"></div><div class="v20_131" id="130"></div><div class="v20_132" id="129"></div><div class="v20_133" id="128"></div><div class="v20_134" id="127"></div><div class="v20_135" id="126"></div><div class="v20_136" id="125"></div><div class="v20_137" id="124"></div><div class="v20_138" id="123"></div><div class="v20_139" id="122"></div><div class="v20_140" id="121"></div><div class="v20_141" id="50"></div><div class="v20_142" id="51"></div><div class="v20_143" id="52"></div><div class="v20_144" id="53"></div><div class="v20_145" id="54"></div><div class="v20_146" id="56"></div><div class="v20_147" id="57"></div><div class="v20_148"  id="58"></div><div class="v20_149" id="59"></div><div class="v20_150" id="60"></div><div class="v20_151" id="62"></div><div class="v20_152" id="63"></div><div class="v20_153" id="64"></div><div class="v20_154" id="65"></div><div class="v20_155" id="66"></div><div class="v20_156" id="67"></div><div class="v20_157" id="68"></div><div class="v20_158" id="69"></div><div class="v20_159" id="70"></div><div class="v20_160" id="71"></div><div class="v20_161" id="73"></div><div class="v20_162" id="74"></div><div class="v20_163" id="75"></div><div class="v20_164" id="76"></div><div class="v20_165" id="77"></div><div class="v20_166" id="78"></div><div class="v20_167" id="79"></div><div class="v20_168" id="80"></div><div class="v20_169" id="81"></div><div class="v20_170" id="82"></div><div class="v20_171" id="83"></div><div class="v20_172"id="85"></div><div class="v20_173"id="84"></div><div class="v20_174" id=""></div><div class="v20_175" id=""></div><div class="v20_176" id=""></div></div></div>
+    </div>
+  <script>
+    class priorityqueue{
+      constructor()
+      {
+          this.items=[];
+      }
+      enqueue(element)
+      {
+          if(this.isEmpty())
+          {
+              this.items.push(element);
+          }
+          else{
+              let f=0;
+              for(let i=0;i<this.items.length;i++)
+              {
+                  if(element[1]<this.items[i][1])
+                  {
+                      this.items.splice(i,0,element);
+                      let f=1;
+                      break;
+                  }
+              }
+              if(!f)
+              {
+                  this.items.push(element);
+              }
+          }
+      };
+      dequeue()
+      {
+          return(this.items.shift());
+      };
+      isEmpty()
+      {
+          return(this.items.length===0);
+      };
+  }
+  
+  class graph{
+      constructor()
+      {
+          this.nodes=[];
+          this.adjacencylist={};
+      }
+      addnode(node)
+      {
+          this.nodes.push(node);
+          this.adjacencylist[node]=[];
+      };
+      addedge(node1,node2,Ts,colr)
+      {
+          this.adjacencylist[node1].push({node:node2,Timess:Ts,line:colr});
+          this.adjacencylist[node2].push({node:node1,Timess:Ts,line:colr});
+          
+      };
+      shortestroute(source,destination)
+      {
+          console.log("--Directions from " + source+ " to " + destination + "--\n");
+          let t={};
+          var c=[];
+          let b={};
+          t[source]=0;
+          var fs=0,fd=0;
+          let pq= new priorityqueue();
+          this.nodes.forEach(node => {
+              if(node==source)
+              {
+                  fs=1;
+              }
+              if(node==destination)
+              {
+                  fd=1;
+              }
+              if(node!==source)
+              {
+                  t[node]=Infinity;
+              }
+          });
+             if(fs==0&&fd==0)
+              {
+                  return {'status':9900};
+              }
+              else if(fs==0)
+              {
+                  return {'status':9901};
+              }
+              else if(fd==0)
+              {
+                  return {'status':9910};
+              }
+              pq.enqueue([source,0]);
+              while(!pq.isEmpty())
+              {
+                  let short=pq.dequeue();
+                  let currentnode=short[0];
+                  this.adjacencylist[currentnode].forEach(neighbour=>{
+                      let time=t[currentnode]+neighbour.Timess;
+                      if(currentnode!=source)
+                      {
+                          if(this.getline(currentnode,neighbour.node)!=this.getline(currentnode,b[currentnode]))
+                          {
+                              time=time+9;
+                          }
+                      }
+                  if(time<t[neighbour.node]){
+                      t[neighbour.node]=time;
+                      b[neighbour.node]=currentnode;
+                      pq.enqueue([neighbour.node,time]);
+                    }
+                  });
+             
+              } 
+              let path=[destination];
+              let last=destination;
+              class final{
+                  constructor()
+                  {
+                      this.status=99;
+                      this.line1=[];
+                      this.line2=[];
+                      this.interchange=[];
+                      //this.ends=[];
+                      this.path;
+                      this.time;
+                  }
+              }
+                  var result =new final();
+                  while(last!==source)
+                  {
+                      if(this.getline(last,b[last])!=this.getline(b[last],b[b[last]]))
+                      {
+                          if(b[last]!=source)
+                          {
+                              result.line1.unshift(this.getline(b[last],b[b[last]]));
+                              result.line2.unshift(this.getline(last,b[last]));
+                              result.interchange.unshift(b[last]);
+                          }
+                      }
+                      path.unshift(b[last]);
+                      last=b[last];
+                  }
+                  result.path=path;
+                  result.time=t[destination];
+                  if(result.interchange.length==0)
+                  {
+                      result.line1[0]=this.getline(result.path[0],result.path[1])
+                  }
+                 // result.ends=getlast(result.path,result.interchange,result.line1,result.line2);
+                  return result;
+      }
+      
+      printgraph(station)
+      {
+          console.log("adjacency list of "+ station + " are ");
+          for(var i=0;i<this.adjacencylist[station].length;i++)
+          {
+              console.log(this.adjacencylist[station][i].node);
+          }
+      }
+      getline(station1,station2)
+      {
+          var a=this.adjacencylist[station1];
+          var b=this.adjacencylist[station2];
+          if(a==undefined||b==undefined)
+          {
+              return -2;
+          }
+          for(var i=0;i<this.adjacencylist[station1].length;i++)
+          {
+              if(this.adjacencylist[station1][i].node==station2)
+              {
+                  return(this.adjacencylist[station1][i].line);
+              }
+          }
+          for(var j=0;j<this.adjacencylist[station2].length;j++)
+          {
+              if(this.adjacencylist[station2][j].node==station1)
+              {
+                  return(this.adjacencylist[station2][j].line);
+              }
+          }
+              
+          return -1;
+          
+      }
+
+  }
+
+  function rungraph(){
+      //let g=window.r;
+      let source=document.getElementById("src").value;
+      let destination=document.getElementById("dest").value;
+      if(source.length==0){
+        return;
+      }
+      else if(destination.length==0){
+        return;
+      }
+      if(source==destination){
+        alert("Starting Location and Destinaton cannot be same.");
+        return;
+      }
+      console.log(r.shortestroute(source,destination));
+      result=r.shortestroute(source,destination);
+      let arr=new Array();
+      arr=r.shortestroute(source,destination).path;
+      show(arr);
+
+      fpath=result.path;
+      interchange=result.interchange;
+      //g.getline(source,destination);
+      //g.printgraph(source,destination);
+
+      document.getElementById("container").style.display="none";
+      document.getElementById("pathout").style.display="inline";
+
+      document.getElementById("dest-out").innerHTML=destination;
+      document.getElementById("src-out").innerHTML=source;
+      document.getElementById("no-station-out").innerHTML= fpath.length;
+      
+      document.getElementById("liv-map").style.display="inline";
+      document.getElementById("liv-map-2").style.display="inline";
+      let fare_element=document.getElementById("fare");
+      let fare=(result.time)*1.24;
+      let finalfare=Math.floor(fare);
+      fare_element.innerHTML=finalfare;
+      var inter=document.getElementById("inter");
+      if(interchange.length==0){
+        var newlab=document.createElement("label");
+        newlab.innerHTML="No Interchange";
+        inter.appendChild(newlab);
+      }
+      else{
+        for(let i=0;i<interchange.length;i++){
+        var newlab=document.createElement("label");
+        newlab.innerHTML=interchange[i];
+        var newline=document.createElement("br");
+
+        var div1=document.createElement("div");
+        div1.classList.add("left-inter");
+        var div2=document.createElement("div");
+        div2.classList.add("right-inter");
+        var div3=document.createElement("div");
+        div3.classList.add("li-inter");
+        var intimg=document.createElement("img");
+        intimg.setAttribute("src","depositphotos_481589750-stock-illustration-flat-arrows-on-white-background-removebg-preview.png");
+        intimg.classList.add("inter-img");
+
+        div1.appendChild(intimg);
+        div2.appendChild(newlab);
+        div2.appendChild(newline);
+        div3.appendChild(div1);
+        div3.appendChild(div2);
+        inter.appendChild(div3);
+      }
+      }
+      
+
+
+      var menu=document.getElementById("pathout").getElementsByTagName("ul")[0];
+      for(let i=0;i<fpath.length;i++){
+          var newli=document.createElement("li");
+          var div=document.createElement("div");
+          var label=document.createElement("label");
+          var newline=document.createElement("br");
+          var divstatlab=document.createElement("div");
+          var horline=document.createElement("hr");
+          div.classList.add("path-list-div");
+          divstatlab.classList.add("verticalline");
+          div.appendChild(horline);
+          divstatlab.appendChild(label);
+          label.innerHTML=fpath[i];
+          div.appendChild(divstatlab);
+          menu.appendChild(div);
+          menu.appendChild(newline);
+      }
+      
+  }
+  function show(array)
+  {
+    for(var i=0;i<array.length;i++)
+    {
+        console.log(array[i]);
+        console.log(m.get(array[i]));
+        var x=m.get(array[i]);
+        var ob=document.getElementById(x);
+        ob.style.opacity=1;
+        ob.style.animation= "glowing 2500ms infinite"
+    ;
+        
+    }
+  }
+  let r=new graph();
+//BLUE LINE--------------
+r.addnode('Noida Electronic City');
+r.addnode('Noida Sector 62');
+r.addnode('Noida Sector 59');
+r.addnode('Noida Sector 61');
+r.addnode('Noida Sector 52');
+r.addnode('Noida Sector 34');
+r.addnode('Noida City Centre');
+r.addnode('Golf Course');
+r.addnode('Botanical Garden');
+r.addnode('Noida Sector 18');
+r.addnode('Noida Sector 16');
+r.addnode('Noida Sector 15');
+r.addnode('New Ashok Nagar');
+r.addnode('Mayur Vihar Extension');
+r.addnode('Mayur Vihar - I');
+r.addnode('Akshardham');
+r.addnode('Yamuna Bank');
+r.addnode('Indraprastha');
+r.addnode('Pragati Maidan');
+r.addnode('Mandi House');
+r.addnode('Barakhambha Road');
+r.addnode('Rajiv Chowk');
+r.addnode('Ramakrishna Ashram Marg');
+r.addnode('Jhandewalan');
+r.addnode('Karol Bagh');
+r.addnode('Rajendra Place');
+r.addnode('Patel Nagar');
+r.addnode('Shadipur');
+r.addnode('Kirti Nagar');
+r.addnode('Moti Nagar');
+r.addnode('Ramesh Nagar');
+r.addnode('Rajouri Garden');
+r.addnode('Tagore Garden');
+r.addnode('Subhash Nagar');
+r.addnode('Tilak Nagar');
+r.addnode('Janakpuri East');
+r.addnode('Janakpuri West');
+r.addnode('Uttam Nagar East');
+r.addnode('Uttam Nagar West');
+r.addnode('Nawada');
+r.addnode('Dwarka Mor');
+r.addnode('Dwarka');
+r.addnode('Dwarka Sector 14');
+r.addnode('Dwarka Sector 13');
+r.addnode('Dwarka Sector 12');
+r.addnode('Dwarka Sector 11');
+r.addnode('Dwarka Sector 10');
+r.addnode('Dwarka Sector 9');
+r.addnode('Dwarka Sector 8');
+r.addnode('Dwarka Sector 21');
+r.addedge('Noida Electronic City','Noida Sector 62',2.02,'blue');
+r.addedge('Noida Sector 62','Noida Sector 59',2.02,'blue');
+r.addedge('Noida Sector 59','Noida Sector 61',2.02,'blue');
+r.addedge('Noida Sector 61','Noida Sector 52',2.02,'blue');
+r.addedge('Noida Sector 52','Noida Sector 34',2.02,'blue'); 
+r.addedge('Noida Sector 34','Noida City Centre',2.02,'blue');
+r.addedge('Noida City Centre','Golf Course',2.02,'blue');
+r.addedge('Golf Course','Botanical Garden',2.02,'blue');
+r.addedge('Botanical Garden','Noida Sector 18',2.02,'blue');
+r.addedge('Noida Sector 18','Noida Sector 16',2.02,'blue');
+r.addedge('Noida Sector 16','Noida Sector 15',2.02,'blue');
+r.addedge('Noida Sector 15','New Ashok Nagar',2.02,'blue');
+r.addedge('New Ashok Nagar','Mayur Vihar Extension',2.02,'blue');
+r.addedge('Mayur Vihar Extension','Mayur Vihar - I',2.02,'blue');
+r.addedge('Mayur Vihar - I','Akshardham',2.02,'blue');
+r.addedge('Akshardham','Yamuna Bank',2.02,'blue');
+r.addedge('Yamuna Bank','Indraprastha',2.02,'blue');
+r.addedge('Indraprastha','Pragati Maidan',2.02,'blue');
+r.addedge('Pragati Maidan','Mandi House',2.02,'blue');
+r.addedge('Mandi House','Barakhambha Road',2.02,'blue');
+r.addedge('Barakhambha Road','Rajiv Chowk',2.02,'blue');
+r.addedge('Rajiv Chowk','Ramakrishna Ashram Marg',2.02,'blue');
+r.addedge('Ramakrishna Ashram Marg','Jhandewalan',2.02,'blue');
+r.addedge('Jhandewalan','Karol Bagh',2.02,'blue');
+r.addedge('Karol Bagh','Rajendra Place',2.02,'blue');
+r.addedge('Patel Nagar','Shadipur',2.02,'blue');
+r.addedge('Shadipur','Kirti Nagar',2.02,'blue');
+r.addedge('Kirti Nagar','Moti Nagar',2.02,'blue');
+r.addedge('Moti Nagar','Ramesh Nagar',2.02,'blue');
+r.addedge('Ramesh Nagar','Rajouri Garden',2.02,'blue');
+r.addedge('Rajouri Garden','Tagore Garden',2.02,'blue');
+r.addedge('Tagore Garden','Subhash Nagar',2.02,'blue');
+r.addedge('Subhash Nagar','Tilak Nagar',2.02,'blue');
+r.addedge('Tilak Nagar','Janakpuri East',2.02,'blue');
+r.addedge('Janakpuri East','Janakpuri West',2.02,'blue');
+r.addedge('Janakpuri West','Uttam Nagar East',2.02,'blue');
+r.addedge('Uttam Nagar East','Uttam Nagar West',2.02,'blue');
+r.addedge('Uttam Nagar West','Nawada',2.02,'blue');
+r.addedge('Nawada','Dwarka Mor',2.02,'blue');
+r.addedge('Dwarka Mor','Dwarka',2.02,'blue');
+r.addedge('Dwarka','Dwarka Sector 14',2.02,'blue');
+r.addedge('Dwarka Sector 14','Dwarka Sector 13',2.02,'blue');
+r.addedge('Dwarka Sector 13','Dwarka Sector 12',2.02,'blue');
+r.addedge('Dwarka Sector 12','Dwarka Sector 11',2.02,'blue');
+r.addedge('Dwarka Sector 11','Dwarka Sector 10',2.02,'blue');
+r.addedge('Dwarka Sector 10','Dwarka Sector 9',2.02,'blue');
+r.addedge('Dwarka Sector 9','Dwarka Sector 8',2.02,'blue');
+r.addedge('Dwarka Sector 8','Dwarka Sector 21',2.02,'blue');
+
+
+
+
+
+//Yellow lines-------
+r.addnode('Samaypur Badli');
+r.addnode('Rohini Sector 18');
+r.addnode('Haiderpur');
+r.addnode('Jahangirpuri');
+r.addnode('Adarsh Nagar');
+r.addnode('Azadpur');
+r.addnode('Model Town');
+r.addnode('GTB Nagar');
+r.addnode('Vishwa Vidyalaya');
+r.addnode('Vidhan Sabha');
+r.addnode('Civil Lines');
+r.addnode('Kashmere Gate');
+r.addnode('Chandni Chowk');
+r.addnode('Chawri Bazar');
+r.addnode('New Delhi');
+//r.addnode('Rajiv Chowk');
+r.addnode('Patel Chowk');
+r.addnode('Central Secretariat');
+r.addnode('Udyog Bhawan');
+r.addnode('Lok Kalyan Marg');
+r.addnode('Jor Bagh');
+r.addnode('INA');
+r.addnode('AIIMS');
+r.addnode('Green Park');
+r.addnode('Hauz Khas');
+r.addnode('Malviya Nagar');
+r.addnode('Saket');
+r.addnode('Qutub Minar');
+r.addnode('Chhatarpur');
+r.addnode('Sultanpur');
+r.addnode('Ghitorni');
+r.addnode('Arjan Garh');
+r.addnode('Guru Dronacharya');
+r.addnode('Sikandarpur');
+r.addnode('MG Road');
+r.addnode('IFFCO Chowk');
+r.addnode('HUDA City Centre');
+
+r.addedge('Samaypur Badli','Rohini Sector 18', 2.22, 'yellow');
+r.addedge('Rohini Sector 18','Haiderpur', 2.22, 'yellow');
+r.addedge('Haiderpur','Jahangirpuri', 2.22, 'yellow');
+r.addedge('Jahangirpuri','Adarsh Nagar', 2.22, 'yellow');
+r.addedge('Adarsh Nagar','Azadpur', 2.22, 'yellow');
+r.addedge('Azadpur','Model Town', 2.22, 'yellow');
+r.addedge('Model Town','GTB Nagar', 2.22, 'yellow');
+r.addedge('GTB Nagar','Vishwa Vidyalaya', 2.22, 'yellow');
+r.addedge('Vishwa Vidyalaya','Vidhan Sabha', 2.22, 'yellow');
+r.addedge('Vidhan Sabha','Civil Lines', 2.22, 'yellow');
+r.addedge('Civil Lines','Kashmere Gate', 2.22, 'yellow');
+r.addedge('Kashmere Gate', 'Chandni Chowk',2.22, 'yellow');
+r.addedge('Chandni Chowk','Chawri Bazar', 2.22, 'yellow');
+r.addedge('Chawri Bazar','New Delhi', 2.22, 'yellow');
+r.addedge('New Delhi','Rajiv Chowk', 2.22, 'yellow');
+r.addedge('Rajiv Chowk','Patel Chowk', 2.22, 'yellow');
+r.addedge('Patel Chowk','Central Secretariat', 2.22, 'yellow');
+r.addedge('Central Secretariat','Udyog Bhawan', 2.22, 'yellow');
+r.addedge('Udyog Bhawan','Lok Kalyan Marg', 2.22, 'yellow');
+r.addedge('Lok Kalyan Marg','Jor Bagh', 2.22, 'yellow');
+r.addedge('Jor Bagh','INA', 2.22, 'yellow');
+r.addedge('INA','AIIMS', 2.22, 'yellow');
+r.addedge('AIIMS','Green Park', 2.22, 'yellow');
+r.addedge('Green Park','Hauz Khas', 2.22, 'yellow');
+r.addedge('Hauz Khas','Malviya Nagar', 2.22, 'yellow');
+r.addedge('Malviya Nagar','Saket', 2.22, 'yellow');
+r.addedge('Saket','Qutub Minar', 2.22, 'yellow');
+r.addedge('Qutub Minar','Chhatarpur', 2.22, 'yellow');
+r.addedge('Chhatarpur','Sultanpur', 2.22, 'yellow');
+r.addedge('Sultanpur','Ghitorni', 2.22, 'yellow');
+r.addedge('Ghitorni','Arjan Garh', 2.22, 'yellow');
+r.addedge('Arjan Garh','Guru Dronacharya', 2.22, 'yellow');
+r.addedge('Guru Dronacharya','Sikandarpur', 2.22, 'yellow');
+r.addedge('Sikandarpur','MG Road', 2.22, 'yellow');
+r.addedge('MG Road','IFFCO Chowk', 2.22, 'yellow');
+r.addedge('IFFCO Chowk','HUDA City Centre', 2.22, 'yellow');
+
+
+
+
+
+//Pink Line--------------
+r.addnode('Majlis Park');
+//r.addnode('Azadpur');
+r.addnode('Shalimar Bagh');
+r.addnode('Netaji Subhash Place');
+r.addnode('Shakurpur');
+r.addnode('Punjabi Bagh West');
+r.addnode('ESI Hospital');
+//r.addnode('Rajouri Garden');
+r.addnode('Mayapuri');
+r.addnode('Naraina Vihar');
+r.addnode('Delhi Cantonment');
+r.addnode('Durgabai Deshmukh South Campus');
+r.addnode('Sir Vishweshwaraiah Moti Bagh');
+r.addnode('Bhikaji Cama Place');
+r.addnode('Sarojini Nagar');
+//r.addnode('INA');
+r.addnode('South Extension');
+r.addnode('Lajpat Nagar');
+r.addnode('Vinoba Puri');
+r.addnode('Ashram');
+r.addnode('Hazrat Nizamuddin');
+//r.addnode('Mayur Vihar - I');
+r.addnode('Mayur Vihar Pocket I');
+r.addedge('Majlis Park','Azadpur',2.7,'pink');
+r.addedge('Azadpur','Shalimar Bagh',2.7,'pink');
+r.addedge('Shalimar Bagh','Netaji Subhash Place',2.7,'pink');
+r.addedge('Netaji Subhash Place','Shakurpur',2.7,'pink');
+r.addedge('Shakurpur','Punjabi Bagh West',2.7,'pink');
+r.addedge('Punjabi Bagh West','ESI Hospital',2.7,'pink');
+r.addedge('ESI Hospital','Rajouri Garden',2.7,'pink');
+r.addedge('Rajouri Garden','Mayapuri',2.7,'pink');
+r.addedge('Mayapuri','Naraina Vihar',2.7,'pink');
+r.addedge('Naraina Vihar','Delhi Cantonment',2.7,'pink');
+r.addedge('Delhi Cantonment','Durgabai Deshmukh South Campus',2.7,'pink');
+r.addedge('Durgabai Deshmukh South Campus','Sir Vishweshwaraiah Moti Bagh',2.7,'pink');
+r.addedge('Sir Vishweshwaraiah Moti Bagh','Bhikaji Cama Place',2.7,'pink');
+r.addedge('Bhikaji Cama Place','Sarojini Nagar',2.7,'pink');
+r.addedge('Sarojini Nagar','INA',2.7,'pink');
+r.addedge('INA','South Extension',2.7,'pink');
+r.addedge('South Extension','Lajpat Nagar',2.7,'pink');
+r.addedge('Lajpat Nagar','Vinoba Puri',2.7,'pink');
+r.addedge('Vinoba Puri','Ashram',2.7,'pink');
+r.addedge('Ashram','Hazrat Nizamuddin',2.7,'pink');
+r.addedge('Hazrat Nizamuddin','Mayur Vihar - I',2.7,'pink');
+r.addedge('Mayur Vihar - I','Mayur Vihar Pocket I',2.7,'pink');
+
+
+//green line=======
+r.addnode('Inderlok');
+r.addnode('Ashok Park Main');
+r.addnode('Punjabi Bagh East');
+//r.addnode('Punjabi Bagh Wast');
+r.addnode('Shivaji Park');
+r.addnode('Madipur');
+r.addnode('Paschim Vihar East');
+r.addnode('Paschim Vihar West');
+r.addnode('Peera Garhi');
+r.addnode('Udyog Nagar');
+r.addnode('Surajmal Stadium');
+r.addnode('Nangloi');
+r.addnode('Nangloi Railway station');
+r.addnode('Rajdhani Park');
+r.addnode('Mundka');
+r.addnode('Mundka Industrial Area');
+r.addnode('Ghevra Metro station');
+r.addnode('Tikri Kalan');
+r.addnode('Tikri Border');
+r.addnode('Pandit Shree Ram Sharma');
+r.addnode('Bahadurgarh City');
+r.addnode('Brigadier Hoshiyar Singh');
+r.addedge('Inderlok','Ashok Park Main',2.49,'green');
+r.addedge('Ashok Park Main', 'Punjabi Bagh East',2.49,'green');
+r.addedge('Punjabi Bagh East','Punjabi Bagh West',2.49,'green');
+r.addedge('Punjabi Bagh West','Shivaji Park',2.49,'green');
+r.addedge('Shivaji Park','Madipur',2.49,'green');
+r.addedge('Madipur','Paschim Vihar East', 2.49, 'green');
+r.addedge('Paschim Vihar East', 'Paschim Vihar West', 2.49, 'green');
+r.addedge('Paschim Vihar West', 'Peera Garhi', 2.49, 'green');
+r.addedge('Peera Garhi', 'Udyog Nagar', 2.49, 'green');
+r.addedge('Udyog Nagar', 'Surajmal Stadium', 2.49, 'green');
+r.addedge('Surajmal Stadium', 'Nangloi', 2.49, 'green'); 
+r.addedge('Nangloi', 'Nangloi Railway station', 2.49, 'green');
+r.addedge('Nangloi Railway station', 'Rajdhani Park', 2.49, 'green');
+r.addedge('Rajdhani Park', 'Mundka', 2.49, 'green');
+r.addedge('Mundka', 'Mundka Industrial Area', 2.49, 'green');
+r.addedge('Mundka Industrial Area', 'Ghevra Metro station', 2.49, 'green');
+r.addedge('Ghevra Metro station', 'Tikri Kalan', 2.49, 'green');
+r.addedge('Tikri Kalan', 'Tikri Border', 2.49, 'green');
+r.addedge('Tikri Border', 'Pandit Shree Ram Sharma', 2.49, 'green');
+r.addedge('Pandit Shree Ram Sharma', 'Bahadurgarh City', 2.49, 'green');
+r.addedge('Bahadurgarh City', 'Brigadier Hoshiyar Singh', 2.49, 'green');
+
+////map==============
+const m=new Map();
+m.set("Noida Electronic City",49);
+m.set("Noida Sector 62",48);
+m.set("Noida Sector 59",47);
+m.set("Noida Sector 61",46);
+m.set("Noida Sector 52",45);
+m.set("Noida Sector 34",44);
+m.set("Noida City Centre",43);
+m.set("Golf Course",42);
+m.set("Botanical Garden",41);
+m.set("Noida Sector 18",40);
+m.set("Noida Sector 16",39);
+m.set("Noida Sector 15",38);
+m.set("New Ashok Nagar",37);
+m.set("Mayur Vihar Extension",36);
+m.set("Mayur Vihar - I",35);
+m.set("Akshardham",34);
+m.set("Yamuna Bank",33);
+m.set("Indraprastha",32);
+m.set("Pragati Maidan",31);
+m.set("Mandi House",30);
+m.set("Barakhambha Road",29);
+m.set("Rajiv Chowk",28);
+m.set("Ramakrishna Ashram Marg",27);
+m.set("Jhandewalan",26);
+m.set("Karol Bagh",25);
+m.set("Rajendra Place",24);
+m.set("Patel Nagar",23);
+m.set("Shadipur",22);
+m.set("Kirti Nagar",138);
+m.set("Moti Nagar",21);
+m.set("Ramesh Nagar",20);
+m.set("Rajouri Garden",19);
+m.set("Tagore Garden",18);
+m.set("Subhash Nagar",17);
+m.set("Tilak Nagar",16);
+m.set("Janakpuri East",15);
+m.set("Janakpuri West",14);
+m.set("Uttam Nagar East",13);
+m.set("Uttam Nagar West",12);
+m.set("Nawada",11);
+m.set("Dwarka Mor",10);
+m.set("Dwarka",9);
+m.set("Dwarka Sector 14",8);
+m.set("Dwarka Sector 13",7);
+m.set("Dwarka Sector 12",6);
+m.set("Dwarka Sector 11",5);
+m.set("Dwarka Sector 10",4);
+m.set("Dwarka Sector 9",3);
+m.set("Dwarka Sector 8",2);
+m.set("Dwarka Sector 21",1);
+
+m.set('Samaypur Badli',50);
+m.set('Rohini Sector 18',51);
+m.set('Haiderpur',52);
+m.set('Jahangirpuri',53);
+m.set('Adarsh Nagar',54);
+m.set('Azadpur',55);
+m.set('Model Town',56);
+m.set('GTB Nagar',57);
+m.set('Vishwa Vidyalaya',58);
+m.set('Vidhan Sabha',59);
+m.set('Civil Lines',60);
+m.set('Kashmere Gate',61);
+m.set('Chandni Chowk',62);
+m.set('Chawri Bazar',63);
+m.set('New Delhi',64);
+m.set('Patel Chowk',65);
+m.set('Central Secretariat',66);
+m.set('Udyog Bhawan',67);
+m.set('Lok Kalyan Marg',68)
+m.set('Jor Bagh',69);
+m.set('INA',143);
+m.set('AIIMS',70);
+m.set('Green Park',71);
+m.set('Hauz Khas',72);
+m.set('Malviya Nagar',73);
+m.set('Saket',74);
+m.set('Qutub Minar',75);
+m.set('Chhatarpur',76);
+m.set('Sultanpur',77);
+m.set('Ghitorni',78);
+m.set('Arjan Garh',80);
+m.set('Guru Dronacharya',81);
+m.set('Sikandarpur',82);
+m.set('MG Road',83);
+m.set('IFFCO Chowk',84);
+m.set('HUDA City Centre',85);
+
+m.set('Majlis Park',86);
+m.set('Shalimar Bagh',87);
+m.set('Netaji Subhash Place',88);
+m.set('Shakurpur',89);
+m.set('Punjabi Bagh West',90);
+m.set('ESI Hospital',91);
+m.set('Mayapuri',92);
+m.set('Naraina Vihar',93);
+m.set('Delhi Cantonment',94);
+m.set('Durgabai Deshmukh South Campus',95);
+m.set('Sir Vishweshwaraiah Moti Bagh',97);
+m.set('Bhikaji Cama Place',98);
+m.set('Sarojini Nagar',99);
+m.set('South Extension',100);
+m.set('Lajpat Nagar',101);
+m.set('Vinoba Puri',102);
+m.set('Ashram',103);
+m.set('Hazrat Nizamuddin',104);
+m.set('Mayur Vihar Pocket I',105);
+
+
+m.set('Inderlok',120);
+m.set('Ashok Park Main',121);
+m.set('Punjabi Bagh East',122);
+m.set('Shivaji Park',123);
+m.set('Madipur',124);
+m.set('Paschim Vihar East',125);
+m.set('Paschim Vihar West',126);
+m.set('Peera Garhi',127);
+m.set('Udyog Nagar',128);
+m.set('Surajmal Stadium',129);
+m.set('Nangloi',130);
+m.set('Nangloi Railway station',131);
+m.set('Rajdhani Park',142);
+m.set('Mundka',132);
+m.set('Mundka Industrial Area',133);
+m.set('Ghevra Metro station',134);
+m.set('Tikri Kalan',135);
+m.set('Tikri Border',136);
+m.set('Pandit Shree Ram Sharma',137);
+m.set('Bahadurgarh City',140);
+m.set('Brigadier Hoshiyar Singh',141);
+  </script>
+</html>
+<style>
+            input[type=text]{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                box-sizing: border-box;
+                margin-top: 10px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            body {
+              zoom: 0.9; /* Other non-webkit browsers */
+              zoom: 90%; /* Webkit browsers */
+              /*background-image: url("delhi-map.png");*/
+              padding-bottom: 150px;
+              overflow-x: hidden ;
+              background-color: white;
+            }
+            input[type=button] {
+              background-color: rgb(49, 46, 226);
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 9px;
+              cursor: pointer;
+              font-size: 20px;
+              position: relative;
+              top: 40px;
+              left: 195px;
+            }
+
+            input[type=button]:hover {
+              background-color: red;
+            }
+            input[type=text] {
+                transition: width 0.4s ease-in-out;
+            }
+            input[type=text]:focus {
+                width: 100%;
+            }
+            .from{
+              position: relative;
+              top:30px;
+            }
+            .to{
+              position: relative;
+              top:40px;
+            }
+            .container {
+                float: left;
+                position: relative;
+                top: 50px;
+                bottom:20px;
+                margin-left: 550;
+                border-radius: 15px;
+                background-color: rgb(127, 209, 236);
+                padding: 30px;
+                width: 600px;
+                height: 600px;
+                overflow: visible;
+                border: black;
+                border-style: solid;
+                border-width: 1px;
+            }
+            .total{
+              display:flex;
+            }
+            .live-map{
+              display: inline;
+              margin-inline: 400px;
+            }
+            .container P{
+              color:black;
+              font-size: 35px;
+              font-weight:600;
+              position: relative;
+              top:2px;
+              left:61px;
+            }
+            .container label{
+              color:rgb(170, 13, 13);
+              font-size: 25px;
+              font-weight:500;
+            }
+            .pathout-container P{
+              color:black;
+              font-size: 35px;
+              font-weight:600;
+              position: relative;
+              top:2px;
+              left:50px;
+            }
+            .headers{
+              font-size: 25px;
+              font-weight:600;
+            }
+            .pc-others{
+              color:black;
+              font-size: 20px;
+            }
+            .inter-img{
+              height: 50px;
+              width: auto;
+            }
+            .pathout-container{
+              height: fit-content;
+              float: left;
+              position: relative;
+              top: 45px;
+              margin-left: 20;
+              border-radius: 15px;
+              background-color: rgb(127, 209, 236);
+              padding: 30px;
+              width: 700px;
+              border: black;
+              border-style: solid;
+              border-width: 1px;
+            }
+            .showpath div{
+              margin-left: 10px;
+            }
+            .showpath{
+              color:black;
+              font-size: 20px;
+            }
+            .path-list-div{
+              display: flex;
+            }
+            .left-inter {
+              position: relative;
+              top: -10;
+            }
+            .path-list-div hr {
+              width: 60;
+              height: 6;
+              position: relative;
+              color: black;
+              left: -10;
+              opacity: 1;
+              background-color: black;
+            }
+            .path-vertical-line{
+              position: relative;
+              left:35px;
+              border-left: 6px solid black;
+              height:auto;
+            }
+            .path-output{
+              display:flex;
+            }
+            * {
+    box-sizing: border-box;
+  }
+  .li-inter {
+    display: flex;
+}
+  body {
+    font-size: 14px;
+  }
+  .v20_2 {
+    width: 100%;
+    height: 1024px;
+    background: rgba(255,255,255,1) ;
+    display: none;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  .v20_3 {
+    width: 12px;
+    height: 12px;
+    background: rgba(20,19,19,1);
+      opacity: 0;
+    position: absolute;
+    top: 158px;
+    left: 433px;
+    border-radius: 50%;
+  }
+  .v20_4 {
+    
+    width: 100%;
+    height: 832px;
+    background: rgbskyblue ;
+
+    opacity: 1;
+    position: absolute;
+    top: 96px;
+    left: 80px;
+    overflow: auto;
+    display: none;
+  }
+  .v20_5 {
+    
+  width: 1280px;
+  height: 832px;
+  border: 2px solid black;
+  background: url("delhi-map.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 11px;
+  left: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+  .v20_6 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 228px;
+    left: 880px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_7 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 294px;
+    left: 352px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_8 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 316px;
+    left: 332px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_9 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 260px;
+    left: 387px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_10 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 277px;
+    left: 371px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_11 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 250px;
+    left: 413px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_12 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 250px;
+    left: 439px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_13 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 250px;
+    left: 465px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_14 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 255px;
+    left: 491px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_15 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 270px;
+    left: 507px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_16 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 284px;
+    left: 523px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_17 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 287px;
+    left: 541px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_18 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 287px;
+    left: 559px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_19 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 289px;
+    left: 577px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_20 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 299px;
+    left: 594px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_21 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 316px;
+    left: 612px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_22 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 332px;
+    left: 622px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_23 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 332px;
+    left: 640px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_24 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 337px;
+    left: 650px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_25 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 347px;
+    left: 677px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_26 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 337px;
+    left: 716px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_27 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 347px;
+    left: 749px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_28 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 363px;
+    left: 766px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_29 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 379px;
+    left: 782px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_30 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 397px;
+    left: 799px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_31 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 411px;
+    left: 815px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_32 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 427px;
+    left: 831px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_33 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 443px;
+    left: 848px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_34 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 461px;
+    left: 864px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_35 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 466px;
+    left: 890px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_36 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 443px;
+    left: 912px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_37 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 417px;
+    left: 936px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_38 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 392px;
+    left: 959px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_39 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 363px;
+    left: 964px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_40 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 334px;
+    left: 964px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_41 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 306px;
+    left: 964px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_42 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 280px;
+    left: 964px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_43 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 332px;
+    left: 314px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_44 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 347px;
+    left: 296px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_45 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 347px;
+    left: 272px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_46 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 347px;
+    left: 248px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_47 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 347px;
+    left: 224px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_48 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 364px;
+    left: 206px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_49 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 381px;
+    left: 201px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_50 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 398px;
+    left: 219px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_51 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 411px;
+    left: 234px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_52 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 427px;
+    left: 248px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_53 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 437px;
+    left: 258px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_54 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 447px;
+    left: 272px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_55 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 463px;
+    left: 286px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_56 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 489px;
+    left: 277px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_57 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 181px;
+    left: 14px;
+  }
+  .v20_58 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 199px;
+    left: 37px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_59 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 83px;
+    left: 759px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_60 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 119px;
+    left: 761px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_61 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 157px;
+    left: 764px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_62 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 185px;
+    left: 752px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_63 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 206px;
+    left: 737px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_64 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 729px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_65 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 254px;
+    left: 727px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_66 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 267px;
+    left: 737px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_67 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 264px;
+    left: 761px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_68 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 280px;
+    left: 776px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_69 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 280px;
+    left: 799px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_70 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 299px;
+    left: 801px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_71 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 326px;
+    left: 805px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_72 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 347px;
+    left: 811px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_73 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 357px;
+    left: 789px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_74 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 297px;
+    left: 411px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_75 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 352px;
+    left: 441px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_76 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 382px;
+    left: 471px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_77 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 416px;
+    left: 502px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_78 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 416px;
+    left: 486px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_79 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 429px;
+    left: 520px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_80 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 442px;
+    left: 541px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_81 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 445px;
+    left: 570px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+  }
+  .v20_82 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 442px;
+    left: 597px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_83 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 445px;
+    left: 640px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_84 {
+    width: 12px;
+    height: 11px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 446px;
+    left: 664px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_85 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 440px;
+    left: 687px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_86 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 428px;
+    left: 699px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_87 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 416px;
+    left: 687px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_88 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 228px;
+    left: 434px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_89 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 200px;
+    left: 453px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_90 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 174px;
+    left: 453px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_91 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 142px;
+    left: 475px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_92 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 127px;
+    left: 523px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_93 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 104px;
+    left: 571px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_94 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 72px;
+    left: 576px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_95 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 52px;
+    left: 596px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_96 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity:0;
+    position: absolute;
+    top: 503px;
+    left: 598px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_97 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 72px;
+    left: 382px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_98 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity :0;
+    position: absolute;
+    top: 86px;
+    left: 400px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_99 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 99px;
+    left: 416px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_100 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 132px;
+    left: 447px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_101 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 119px;
+    left: 431px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_102 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 152px;
+    left: 491px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_103 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 174px;
+    left: 512px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_104 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 198px;
+    left: 530px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_105 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 548px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_106 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 230px;
+    left: 567px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_107 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 587px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_108 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 233px;
+    left: 601px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_109 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 626px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_110 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 232px;
+    left: 666px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_111 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 230px;
+    left: 699px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_112 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 762px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_113 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 790px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_114 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 230px;
+    left: 818px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_115 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 230px;
+    left: 848px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_116 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 227px;
+    left: 906px;
+  }
+  .v20_117 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 231px;
+    left: 937px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_118 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 228px;
+    left: 964px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_119 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 234px;
+    left: 992px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_120 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 238px;
+    left: 1012px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_121 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 255px;
+    left: 1031px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_122 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 274px;
+    left: 1048px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_123 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 201px;
+    left: 64px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_124 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 196px;
+    left: 88px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_125 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 200px;
+    left: 113px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_126 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 200px;
+    left: 146px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_127 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 202px;
+    left: 170px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_128 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 199px;
+    left: 196px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_129 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 198px;
+    left: 242px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_130 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 198px;
+    left: 220px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_131 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 198px;
+    left: 264px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_132 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 198px;
+    left: 291px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_133 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 198px;
+    left: 315px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_134 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 196px;
+    left: 334px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_135 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 199px;
+    left: 361px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_136 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 197px;
+    left: 384px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_137 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 196px;
+    left: 412px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_138 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 195px;
+    left: 433px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_139 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 200px;
+    left: 466px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_140 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 199px;
+    left: 492px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_141 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 21px;
+    left: 476px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_142 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 46px;
+    left: 487px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_143 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 66px;
+    left: 507px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_144 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 69px;
+    left: 539px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_145 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 86px;
+    left: 556px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_146 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 120px;
+    left: 587px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_147 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 133px;
+    left: 603px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_148 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 147px;
+    left: 618px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_149 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 175px;
+    left: 629px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_150 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 200px;
+    left: 626px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_151 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 254px;
+    left: 623px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_152 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 282px;
+    left: 626px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_153 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 297px;
+    left: 615px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_154 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 332px;
+    left: 598px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_155 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 352px;
+    left: 598px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_156 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 376px;
+    left: 601px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_157 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 397px;
+    left: 599px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_158 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 418px;
+    left: 601px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_159 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 463px;
+    left: 599px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_160 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 479px;
+    left: 597px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_161 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 541px;
+    left: 598px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_162 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 553px;
+    left: 583px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_163 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 567px;
+    left: 569px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_164 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 582px;
+    left: 555px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_165 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 598px;
+    left: 540px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_166 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 613px;
+    left: 524px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_167 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 230px;
+    left: 511px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_168 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 639px;
+    left: 495px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_169 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 640px;
+    left: 476px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_170 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 639px;
+    left: 448px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_171 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 639px;
+    left: 428px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_172 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 673px;
+    left: 414px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_173 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 652px;
+    left: 415px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_174 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+    opacity: 0;
+    position: absolute;
+    top: 444px;
+    left: 622px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_175 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 441px;
+    left: 633px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  .v20_176 {
+    width: 12px;
+    height: 12px;
+    background: skyblue ;
+      opacity:0;
+    position: absolute;
+    top: 340px;
+    left: 803px;
+    border-radius: 50%;animation: glowing 0ms infinite;
+    box-shadow: 0 0 0 2px black;
+
+  }
+  @keyframes glowing {
+        0% {
+          background-color: black;
+          box-shadow: 0 0 0 2px skyblue;
+        }
+        50% {
+          background-color:skyblue;
+          box-shadow: 0 0 0 2px rgb(40, 41, 41);
+        }
+        100% {
+          background-color:skyblue;
+          box-shadow: 0 0 0 2px black;
+        }
+      }
+      #Text{
+   margin:0 auto;
+   font-family: Tahoma, Geneva, sans-serif;
+   font-weight: bold;
+   text-align: center;
+}
+#Text span{
+   display:block;
+}
+#Text span:nth-child(1){
+   font-size:4em;
+   color:#F0F0EE;
+   text-shadow:0px 5px 0px #959691, 0px 7px 0px #959691,0px 15px 0px #858383;
+   line-height:0.85;
+}
+#Text span:nth-child(2){
+   font-family:Pacifico;
+   color:red;
+   text-shadow:0px 2px 0px white;
+   font-size:20px;
+   margin-left:150px;
+   margin-top:-25px;
+   transform:rotate(-15deg);
+}
+#metro1{
+   background-image:url('cityscape_T.png');
+   background-position:top;
+   height:400px;
+}
+#metro{
+   margin-top:-100px;
+   width:100%;
+   height:60px;
+   background-color:transparent;
+   transform:translateX(0px);
+   animation-name:movetrain;
+   animation-duration:8s;
+   animation-iteration-count:infinite;
+}
+#metro span{
+   display:inline-block;
+}
+.door, .door2{
+   width:30px;
+   height:43px;
+   background-color:#CF1D01;
+   position:absolute;
+   margin-top:18px;
+   margin-left:10px;
+   box-shadow:inset 0 -5px 0 #961703;
+   border:1px solid black;
+}
+.door2{
+   width:25px;
+   margin-top:-18px;
+   margin-left:215px;
+}
+.door::before, .door2::before{
+   content:"";
+   width:20px;
+   height:19px;
+   background-color:#008ACB;
+   box-shadow:inset 0 0 10px #004FC8, inset 0 2px 0 blue;
+   position:absolute;
+   margin-top:4px;
+   margin-left:2px;
+   border:3px solid #961703;
+}
+.door2::before{
+   width:17px;
+   margin-left:1px;
+}
+.mirror, .mirror1{
+   width:154px;
+   height:15px;
+   background-color:#666665;
+   margin-top:18px;
+   margin-left:50px;
+   border:1px solid black;
+}
+.mirror1{
+   width:140px;
+   border-radius:0 100% 0 0;
+}
+.mirror span, .mirror1 span{
+   display:inline-block;
+}
+.m1, .m2, .m3, .m4, .m22{
+   display:inline-block;
+   width:35px;
+   height:11px;
+   background-color:#008ACB;
+   position:absolute;
+   margin-top:1px;
+   margin-left:1px;
+   box-shadow:inset 0 0 8px #004FC8;
+   border:1px solid blue;
+}
+.m22{
+   width:70px;
+   border-radius:0 100% 0 0;
+   margin-left:42px;
+}
+.m2{
+   margin-left:40px;
+}
+.m3{
+   margin-left:79px;
+}
+.m4{   
+   margin-left:117px;
+}
+.back{
+   background-color:#E3E1E1;
+   width:250px;
+   height:60px;
+   border-radius:0 0 10px 10px;
+   box-shadow: 0 8px 6px -6px yellow, inset 0 9px 0 #666665, inset 0 15px 0 black;
+}
+.back::after{
+   content:"";
+   background-color:black;
+   width:6px;
+   height:10px;
+   position:absolute;
+   margin-left:249px;
+   margin-top:1px;
+   border-radius:10px;
+}
+.back::before{
+   content:"";
+   width:250px;
+   height:20px;
+   background-color:#CF1D01;
+   border-top:1px solid #CF1D01;
+   box-shadow:inset 0px 4px 0px #E3E1E1, 0 4px 0px black,inset 0 -5px 0px #961703;
+   position:absolute;
+   margin-top:40px;
+   border-radius:0px 0px 10px 10px;
+}
+.engine{
+   background-color:#E3E1E1;
+   width:300px;
+   height:60px;
+   border-radius:0px 100% 10px 10px;
+   box-shadow: 0 8px 6px -6px yellow, inset 0 9px 0 #666665, inset 0 15px 0 black;
+}
+.engine::before{
+   content:"";
+   width:280px;
+   height:20px;
+   background-color:#CF1D01;
+   border-top:1px solid #CF1D01;
+   box-shadow:inset 0px 4px 0px #E3E1E1, 0 4px 0px black,inset 0 -5px 0px #961703;
+   position:absolute;
+   margin-top:40px;
+   border-radius:0 100% 10px 10px;
+}
+.track{
+   background-color:#07b4cb;
+   width:100%;
+   height:10px;
+   border-top:3px solid black;
+   position:relative;
+   margin-top:5px;
+}
+.engine::after{
+   content:"";
+   background-color:yellow;
+   width:4px;
+   height:4px;
+   position:absolute;
+   margin-left:30px;
+   margin-top:-63px;
+   border-radius:50%;
+   box-shadow: 0 0 10px yellow;
+   animation-name:spark1;
+   animation-duration:2s;
+   animation-iteration-count:infinite;
+}
+#electric{
+   width:100%;
+   height:auto;
+   border-top:1px solid black;
+   margin-top:275px;
+   position:absolute;
+}
+.spark1{
+   width:1px;
+   height:30px;
+   background-color:black;
+   position:absolute;
+   margin-top:-32px;
+   margin-left:52px;
+   transform:rotate(-70deg);
+}
+.spark{
+   width:1px;
+   height:37px;
+   background-color:black;
+   display:inline-block;
+   position:absolute;
+   margin-top:-25px;
+   margin-left:50px;
+   transform:rotate(70deg);
+}
+@keyframes movetrain{
+   from{
+      transform:translateX(-100%);
+   }   
+   to{
+      transform:translateX(100%);
+   }
+   80%{
+      transform:translateX(300px);
+   }
+   81%{
+      transform:translateX(310px);
+   }
+   82%{
+      transform:translateX(311px);
+   }
+   83%{
+      transform:translateX(312px);
+   }
+   84%{
+      transform:translateX(313px);
+   }
+   85%{
+      transform:translateX(314px);
+   }
+   89%{
+      transform:translateX(320px);
+   }
+   90%{
+      transform:translateX(400px);
+   }
+}
+@keyframes spark1{
+   100%{
+      background-color:red;
+   }
+   10%{
+      background-color:yellow;
+   }
+}
+</style>

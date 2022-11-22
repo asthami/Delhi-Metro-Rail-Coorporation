@@ -1,0 +1,398 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script> 
+        <title>Delhi Metro Rail Corporation</title>
+    </head>
+    <body>
+      <div id="electric">
+      </div>
+      <div id="metro1">
+      </div>
+      <div id="metro">
+         <span class="back">
+            <div class="door"></div>
+            <div class="mirror">
+               <span class="m1"></span>
+               <span class="m2"></span>
+               <span class="m3"></span>
+               <span class="m4"></span>
+            </div>
+            <div class="door2"></div>
+         </span>
+         <span class="back">
+            <div class="door"></div>
+            <div class="mirror">
+               <span class="m1"></span>
+               <span class="m2"></span>
+               <span class="m3"></span>
+               <span class="m4"></span>
+            </div>
+            <div class="door2"></div>
+         </span>
+         <span class="engine">
+            <div class="spark">
+            </div><div class="spark1"></div>
+            <div class="door"></div>
+            <div class="mirror1">
+               <span class="m1"></span>
+               <span class="m22"></span>
+            </div>
+         </span>
+      </div>
+      <div class="track">
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+        <div class="container-fluid">
+          <img src="logo.png" style="position: relative;  height:35px; float:left; padding: auto;">
+          <a class="navbar-brand" href="#" style="position: relative;  font-size: 30px; padding-left: 15px;">Delhi Metro Rail Corporation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="position: relative;  font-size: 20px;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="view.html" style="position: relative; font-size: 20px;">View Map</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="imgbox">
+      <img src="delhi-map.png" class="metro-map" id="metro-map">
+    </div>
+    <style>
+      .imgbox{
+        margin: 0;
+        padding-top: 50px;
+        display: grid;
+        height: 100%;
+      }
+      .metro-map{
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        max-height: 100vh;
+        margin:auto;
+      }
+      input[type=text]{
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 20px;
+          box-sizing: border-box;
+          margin-top: 10px;
+          margin-bottom: 16px;
+          resize: vertical;
+      }
+      body {
+        zoom: 0.9; /* Other non-webkit browsers */
+        zoom: 90%; /* Webkit browsers */
+        /*background-image: url("delhi-map.png");*/
+        padding-bottom: 150px;
+        overflow-x: hidden ;
+        background-color: white;
+      }
+      input[type=button] {
+        background-color: rgb(49, 46, 226);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 9px;
+        cursor: pointer;
+        font-size: 20px;
+        position: relative;
+        top: 40px;
+        left: 195px;
+      }
+
+      input[type=button]:hover {
+        background-color: red;
+      }
+      input[type=text] {
+          transition: width 0.4s ease-in-out;
+      }
+      input[type=text]:focus {
+          width: 100%;
+      }
+      
+      * {
+box-sizing: border-box;
+}
+.li-inter {
+display: flex;
+}
+body {
+font-size: 14px;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: black;
+    box-shadow: 0 0 0 2px skyblue;
+  }
+  50% {
+    background-color:skyblue;
+    box-shadow: 0 0 0 2px rgb(40, 41, 41);
+  }
+  100% {
+    background-color:skyblue;
+    box-shadow: 0 0 0 2px black;
+  }
+}
+#Text{
+margin:0 auto;
+font-family: Tahoma, Geneva, sans-serif;
+font-weight: bold;
+text-align: center;
+}
+#Text span{
+display:block;
+}
+#Text span:nth-child(1){
+font-size:4em;
+color:#F0F0EE;
+text-shadow:0px 5px 0px #959691, 0px 7px 0px #959691,0px 15px 0px #858383;
+line-height:0.85;
+}
+#Text span:nth-child(2){
+font-family:Pacifico;
+color:red;
+text-shadow:0px 2px 0px white;
+font-size:20px;
+margin-left:150px;
+margin-top:-25px;
+transform:rotate(-15deg);
+}
+#metro1{
+background-image:url('cityscape_T.png');
+background-position:top;
+height:400px;
+}
+#metro{
+margin-top:-100px;
+width:100%;
+height:60px;
+background-color:transparent;
+transform:translateX(0px);
+animation-name:movetrain;
+animation-duration:8s;
+animation-iteration-count:infinite;
+}
+#metro span{
+display:inline-block;
+}
+.door, .door2{
+width:30px;
+height:43px;
+background-color:#CF1D01;
+position:absolute;
+margin-top:18px;
+margin-left:10px;
+box-shadow:inset 0 -5px 0 #961703;
+border:1px solid black;
+}
+.door2{
+width:25px;
+margin-top:-18px;
+margin-left:215px;
+}
+.door::before, .door2::before{
+content:"";
+width:20px;
+height:19px;
+background-color:#008ACB;
+box-shadow:inset 0 0 10px #004FC8, inset 0 2px 0 blue;
+position:absolute;
+margin-top:4px;
+margin-left:2px;
+border:3px solid #961703;
+}
+.door2::before{
+width:17px;
+margin-left:1px;
+}
+.mirror, .mirror1{
+width:154px;
+height:15px;
+background-color:#666665;
+margin-top:18px;
+margin-left:50px;
+border:1px solid black;
+}
+.mirror1{
+width:140px;
+border-radius:0 100% 0 0;
+}
+.mirror span, .mirror1 span{
+display:inline-block;
+}
+.m1, .m2, .m3, .m4, .m22{
+display:inline-block;
+width:35px;
+height:11px;
+background-color:#008ACB;
+position:absolute;
+margin-top:1px;
+margin-left:1px;
+box-shadow:inset 0 0 8px #004FC8;
+border:1px solid blue;
+}
+.m22{
+width:70px;
+border-radius:0 100% 0 0;
+margin-left:42px;
+}
+.m2{
+margin-left:40px;
+}
+.m3{
+margin-left:79px;
+}
+.m4{   
+margin-left:117px;
+}
+.back{
+background-color:#E3E1E1;
+width:250px;
+height:60px;
+border-radius:0 0 10px 10px;
+box-shadow: 0 8px 6px -6px yellow, inset 0 9px 0 #666665, inset 0 15px 0 black;
+}
+.back::after{
+content:"";
+background-color:black;
+width:6px;
+height:10px;
+position:absolute;
+margin-left:249px;
+margin-top:1px;
+border-radius:10px;
+}
+.back::before{
+content:"";
+width:250px;
+height:20px;
+background-color:#CF1D01;
+border-top:1px solid #CF1D01;
+box-shadow:inset 0px 4px 0px #E3E1E1, 0 4px 0px black,inset 0 -5px 0px #961703;
+position:absolute;
+margin-top:40px;
+border-radius:0px 0px 10px 10px;
+}
+.engine{
+background-color:#E3E1E1;
+width:300px;
+height:60px;
+border-radius:0px 100% 10px 10px;
+box-shadow: 0 8px 6px -6px yellow, inset 0 9px 0 #666665, inset 0 15px 0 black;
+}
+.engine::before{
+content:"";
+width:280px;
+height:20px;
+background-color:#CF1D01;
+border-top:1px solid #CF1D01;
+box-shadow:inset 0px 4px 0px #E3E1E1, 0 4px 0px black,inset 0 -5px 0px #961703;
+position:absolute;
+margin-top:40px;
+border-radius:0 100% 10px 10px;
+}
+.track{
+background-color:#07b4cb;
+width:100%;
+height:10px;
+border-top:3px solid black;
+position:relative;
+margin-top:5px;
+}
+.engine::after{
+content:"";
+background-color:yellow;
+width:4px;
+height:4px;
+position:absolute;
+margin-left:30px;
+margin-top:-63px;
+border-radius:50%;
+box-shadow: 0 0 10px yellow;
+animation-name:spark1;
+animation-duration:2s;
+animation-iteration-count:infinite;
+}
+#electric{
+width:100%;
+height:auto;
+border-top:1px solid black;
+margin-top:275px;
+position:absolute;
+}
+.spark1{
+width:1px;
+height:30px;
+background-color:black;
+position:absolute;
+margin-top:-32px;
+margin-left:52px;
+transform:rotate(-70deg);
+}
+.spark{
+width:1px;
+height:37px;
+background-color:black;
+display:inline-block;
+position:absolute;
+margin-top:-25px;
+margin-left:50px;
+transform:rotate(70deg);
+}
+@keyframes movetrain{
+from{
+transform:translateX(-100%);
+}   
+to{
+transform:translateX(100%);
+}
+80%{
+transform:translateX(300px);
+}
+81%{
+transform:translateX(310px);
+}
+82%{
+transform:translateX(311px);
+}
+83%{
+transform:translateX(312px);
+}
+84%{
+transform:translateX(313px);
+}
+85%{
+transform:translateX(314px);
+}
+89%{
+transform:translateX(320px);
+}
+90%{
+transform:translateX(400px);
+}
+}
+@keyframes spark1{
+100%{
+background-color:red;
+}
+10%{
+background-color:yellow;
+}
+}
+</style>
+    </body>
+</html>
